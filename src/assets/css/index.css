@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+@layer utilities {
+    h1,h2,h3,h4,h5,h6{
+        @apply font-poppins
+    }
+}
+@layer utilities {
+    p{
+        @apply font-poppins
+    }
+}
+@layer utilities {
+    .nav{
+
+    }
+    .nav::after{
+        @apply content-[''] bg-gray-300 h-[3px] w-[0%] duration-500 block ease-in-out
+    }
+    .nav:hover::after{
+        @apply w-[100%]
+    }
+}
