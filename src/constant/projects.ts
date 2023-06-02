@@ -7,7 +7,7 @@ import {TbBrandReactNative} from "react-icons/tb";
 export const projects = [
     {
         title: "React Cart",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eos laborum pariatur placeat rem. Cumque perspiciatis quod reprehenderit soluta veniam.",
+        description: "A simple cart system build by React Js,Tailwind and Redux js.",
         img: {
             src: cartProject,
             alt: "project-1"
@@ -30,7 +30,7 @@ export const projects = [
     },
     {
         title: "Warung makan bahari Mobile",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eos laborum pariatur placeat rem. Cumque perspiciatis quod reprehenderit soluta veniam.",
+        description: "Study case about restaurant management. Build by React native. though, their api is keep secret. so we use mockito to mock the api.",
         img: {
             src: wrench,
             alt: "wmb"
@@ -45,7 +45,7 @@ export const projects = [
         ]
     }, {
         title: "E-Procurement",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus eos laborum pariatur placeat rem. Cumque perspiciatis quod reprehenderit soluta veniam.",
+        description: "An API to manage procurement process. you can add product,add vendor and add transaction. Built with Spring boot and Postgresql.",
         type: "Rest API",
         url: "https://github.com/felixa1243/e-procurement",
         img: {

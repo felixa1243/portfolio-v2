@@ -25,4 +25,7 @@
     .nav:hover::after{
         @apply w-[100%]
     }
+    .animated {
+        @apply bg-gradient-to-tl from-neutral-800 via-neutral-900 to-black
+    }
 }

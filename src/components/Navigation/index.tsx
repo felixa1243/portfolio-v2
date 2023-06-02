@@ -30,7 +30,7 @@ const Navigation = () => {
     const isMobile = useMobile()
     return (
         <div
-            className={"w-full h-[75px] flex justify-between border-b-neutral-500 p-10 fixed top-0 z-[5] shadow-xl bg-[rgba(0,0,0,0.9)] backdrop-blur-sm"}>
+            className={"w-full h-[75px] flex justify-between border-b-neutral-500 p-10 fixed top-0 z-[25] shadow-xl bg-[rgba(0,0,0,0.9)] backdrop-blur-sm"}>
             <div className="md:w-1/4 xs:w-1/2 text-white xs:order-2 h-full flex items-center">
                 <h2 className={"relative text-lg"}>Iqbal Network
                     <span className={"absolute top-0 text-sm"}>v2</span>
