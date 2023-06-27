@@ -2,7 +2,9 @@ import cartProject from "../assets/img/cart-project.png";
 import {FaReact} from "react-icons/fa";
 import {SiPostgresql, SiRedux, SiSpringboot, SiTailwindcss} from "react-icons/si";
 import wrench from "../assets/img/wrench.webp";
-import {TbBrandReactNative} from "react-icons/tb";
+import {TbBrandNextjs, TbBrandReactNative} from "react-icons/tb";
+import bagiTimnya from '../assets/img/bagi-timnya.png';
+import spm from '../assets/img/thumbs-spm.png'
 
 export const projects = [
     {
@@ -60,6 +62,66 @@ export const projects = [
             {
                 name: "postgre sql",
                 icon: SiPostgresql
+            }
+        ]
+    },
+    {
+        title: "Bagi timnya",
+        description: "ever want to split your team? but you don't know to start off. use our apps, you can split your team.",
+        img: {
+            src: bagiTimnya,
+            alt: "bagi timnya"
+        },
+        type: "Front end App",
+        url: "https://bagitimnya.vercel.app",
+        iconList: [
+            {
+                icon: TbBrandNextjs,
+                name: "Nextjs"
+            }, {
+                icon: SiTailwindcss,
+                name: "Tailwindcss"
+            }
+        ]
+    },
+    {
+        title: "Spm web app",
+        description: "Catalog app for SPM rental. Spm rental is a motorcycle renting service from indonesia. this app include a catalog for product and a blog.",
+        img: {
+            src: spm,
+            alt: "spm-web"
+        },
+        type: "Front end App",
+        url: "https://sewamotorspm.vercel.app/",
+        iconList: [
+            {
+                icon: FaReact,
+                name: "Reactjs"
+            }, {
+                icon: SiTailwindcss,
+                name: "Tailwindcss"
+            }
+        ]
+    },
+    {
+        title: "Damovie",
+        description: "Simple app to manage movie collections. Built with React Native and Spring boot. You can do crud activity and find movie by title.",
+        img: {
+            src: bagiTimnya,
+            alt: "Damovie"
+        },
+        type: "Fullstack App",
+        url: "https://sewamotorspm.vercel.app/",
+        iconList: [
+            {
+                icon: TbBrandReactNative,
+                name: "ReactNative"
+            }, {
+                icon: SiSpringboot,
+                name: "Spring boot"
+            }, {
+                icon: SiPostgresql,
+                name: "Postgresql"
             }
         ]
     }

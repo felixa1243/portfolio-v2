@@ -20,7 +20,7 @@ const Card: FunctionComponent<CardProps> = (props) => {
     {
         props.img && (
             <div className={"h-fit"}>
-                <img src={props.img.src} className={"w-full h-[250px] object-center object-cover rounded-lg"} alt={props.img.alt}/>
+                <img src={props.img.src} className={"w-full h-[250px] object-center object-contain rounded-lg"} alt={props.img.alt}/>
             </div>
         )
     }
@@ -30,8 +30,8 @@ const Card: FunctionComponent<CardProps> = (props) => {
             <h4 className={"text-sm my-1"}>{props.subtitle}</h4>
         )}
         <h4 className={"text-sm"}>{props.description}</h4>
-        {props.optionalChildren && props.optionalChildren}
     </div>
+        {props.optionalChildren && props.optionalChildren}
 </div>
 )
     ;

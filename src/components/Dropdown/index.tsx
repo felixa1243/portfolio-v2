@@ -7,11 +7,7 @@ type DropdownProps = {
 
 type BodyProps = HTMLProps<HTMLDivElement>;
 
-const Dropdown: FC<DropdownProps> & { Body: FC<BodyProps> } = ({
-                                                                   children,
-                                                                   className,
-                                                                   title,
-                                                               }) => {
+const Dropdown: FC<DropdownProps> & { Body: FC<BodyProps> } = ({ children,className,title}) => {
     const [active, setActive] = useState<boolean>(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -59,7 +55,7 @@ const Body: FC<BodyProps> = ({children}) => {
             <motion.div
                 initial={{opacity: 0, y: -5}}
                 animate={{opacity: 1, y: 0}}
-                exit={{opacity: 0}}
+                exit={{opacity: 0,y:-5}}
                 className={"bg-white w-full rounded-lg h-[150px] overflow-y-scroll"}>
                 {children}
             </motion.div>

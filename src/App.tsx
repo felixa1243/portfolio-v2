@@ -3,7 +3,7 @@ import {Card, Dropdown, Modal, Navbar, Reveal, TypeWriter} from "./components";
 import {BsFillArrowDownCircleFill, BsFillPersonFill} from "react-icons/bs";
 import profile from './assets/img/profile.png';
 import {FaGithub, FaReact} from "react-icons/fa";
-import {SiPostgresql, SiSpringboot, SiTailwindcss} from "react-icons/si";
+import {SiPostgresql, SiRedux, SiSpringboot, SiTailwindcss} from "react-icons/si";
 import {TbBrandFramerMotion} from "react-icons/tb";
 import enigmaCertificate from './assets/img/enigma-certificate.webp'
 import SqlCertificate from './assets/img/sql_intermediate certificate.webp'
@@ -30,6 +30,9 @@ function App() {
         }, {
             name: "Postgres",
             icon: SiPostgresql
+        }, {
+            name: "Redux",
+            icon: SiRedux
         }
     ]
     const ratings = [1, 2, 3, 4, 5]
@@ -96,7 +99,7 @@ function App() {
                                     </div>
                                 </Reveal>
                                 <Reveal>
-                                    <div className={"flex gap-5 mt-5"}>
+                                    <div className={"grid xs:grid-cols-4 grid-cols-6 gap-5 mt-5"}>
                                         {
                                             stackList.map(item => (
                                                 <item.icon key={item.name} className={"text-gray-500 text-2xl "}/>))
@@ -132,7 +135,7 @@ function App() {
                                     </Reveal>
                                 </div>
                                 <div
-                                    className="flex flex-col gap-3 xs:h-full bg-neutral-800 text-neutral-300 flex justify-center items-center w-1/2 xs:w-full px-5 py-5">
+                                    className="flex flex-col gap-3 xs:h-full bg-neutral-800 text-neutral-300 justify-center items-center w-1/2 xs:w-full px-5 py-5">
                                     <Reveal>
                                         <h2 className={"text-2xl"}>Profile</h2>
                                     </Reveal>
@@ -171,7 +174,7 @@ function App() {
                                                           img={{src: item.img.src, alt: item.img.alt}}
                                                           subtitle={`Type: ${item.type}`}
                                                           optionalChildren={(
-                                                              <div className={"w-full flex gap-3 mt-3"}>
+                                                              <div className={"w-full flex gap-3 mt-3 text-white"}>
                                                                   {
                                                                       item.iconList.map(ic => {
                                                                           return (

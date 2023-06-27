@@ -8,11 +8,11 @@ interface Props {
 
 const TypeWriter: FunctionComponent<Props> = ({text, className}) => {
     const [index, setIndex] = useState(0)
-    const [direction, setDirection] = useState(1)
+    const [direction, setDirection] = useState<1 | -1>(1)
     const ref = useRef(null)
     const inView = useInView(ref)
     useEffect(() => {
-        if (inView){
+        if (inView) {
             const interval = setInterval(() => {
                 if (index >= text.length) {
                     setDirection(-1)
@@ -26,7 +26,7 @@ const TypeWriter: FunctionComponent<Props> = ({text, className}) => {
                 clearInterval(interval)
             }
         }
-    }, [index,direction,inView])
+    }, [index, text.length, direction, inView])
 
     return (
         <p ref={ref}

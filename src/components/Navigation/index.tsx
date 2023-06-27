@@ -1,6 +1,6 @@
-import {useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import {useMobile} from "../../hooks";
-import {motion} from "framer-motion";
+import {motion, useScroll} from "framer-motion";
 
 const Navigation = () => {
     const navigation = [
@@ -28,6 +28,26 @@ const Navigation = () => {
     const currentPath = location.pathname;
     const [isActive, setIsActive] = useState(false);
     const isMobile = useMobile()
+    const {scrollY} = useScroll()
+    const mobileNavRef = useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+        //handle click outside on mobile nav
+        const handleClickOutside = (event: MouseEvent) => {
+            if (
+                mobileNavRef.current &&
+                !mobileNavRef.current.contains(event.target as Node)
+                && isActive
+            ) {
+                setIsActive(!isActive)
+            }
+        };
+
+        document.addEventListener("click", handleClickOutside);
+        return () => {
+            document.removeEventListener("click", handleClickOutside);
+        };
+    }, []);
     return (
         <div
             className={"w-full h-[75px] flex justify-between border-b-neutral-500 p-10 fixed top-0 z-[25] shadow-xl bg-[rgba(0,0,0,0.9)] backdrop-blur-sm"}>
@@ -39,6 +59,7 @@ const Navigation = () => {
             {
                 isMobile && (
                     <motion.div
+                        ref={mobileNavRef}
                         animate={isActive ? {width: '50%'} : {width: "0"}}
                         transition={{duration: !isActive ? 1 : 0.3}}
                         className={`absolute h-screen flex flex-col gap-3 pt-5 left-0 top-[75px] bg-neutral-800 md:hidden`}>
@@ -70,7 +91,7 @@ const Navigation = () => {
                             <span className="h-[2px] w-full bg-gray-500 block rounded-full"/>
                             <motion.span
                                 className="h-[2px] w-full bg-gray-500 block rounded-full"
-                                animate={isActive ? {x:-3}:{x:0}}
+                                animate={isActive ? {x: -3} : {x: 0}}
                             />
                             <span className="h-[2px] w-full bg-gray-500 block rounded-full"/>
                         </div>
@@ -91,6 +112,9 @@ const Navigation = () => {
                     </div>
                 )
             }
+            <motion.div className={"bg-amber-500 h-[3px] absolute bottom-0 left-0"}
+                        style={{width: scrollY}}
+            />
         </div>
     );
 };
