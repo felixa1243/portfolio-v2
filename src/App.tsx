@@ -132,7 +132,7 @@ function App() {
                                     </Reveal>
                                 </div>
                                 <div
-                                    className="flex flex-col gap-3 xs:h-full bg-neutral-800 text-neutral-300 flex justify-center items-center w-1/2 xs:w-full px-5 py-5">
+                                    className="flex flex-col gap-3 xs:h-full bg-neutral-800 text-neutral-300 justify-center items-center w-1/2 xs:w-full px-5 py-5">
                                     <Reveal>
                                         <h2 className={"text-2xl"}>Profile</h2>
                                     </Reveal>
@@ -171,7 +171,7 @@ function App() {
                                                           img={{src: item.img.src, alt: item.img.alt}}
                                                           subtitle={`Type: ${item.type}`}
                                                           optionalChildren={(
-                                                              <div className={"w-full flex gap-3 mt-3"}>
+                                                              <div className={"w-full flex gap-3 mt-3 text-white"}>
                                                                   {
                                                                       item.iconList.map(ic => {
                                                                           return (

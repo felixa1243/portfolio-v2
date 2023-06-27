@@ -2,8 +2,8 @@ import cartProject from "../assets/img/cart-project.png";
 import {FaReact} from "react-icons/fa";
 import {SiPostgresql, SiRedux, SiSpringboot, SiTailwindcss} from "react-icons/si";
 import wrench from "../assets/img/wrench.webp";
-import {TbBrandReactNative} from "react-icons/tb";
-
+import {TbBrandNextjs, TbBrandReactNative} from "react-icons/tb";
+import bagiTimnya from '../assets/img/bagi-timnya.png'
 export const projects = [
     {
         title: "React Cart",
@@ -60,6 +60,25 @@ export const projects = [
             {
                 name: "postgre sql",
                 icon: SiPostgresql
+            }
+        ]
+    },
+    {
+        title: "Bagi timnya",
+        description: "ever want to split your team? but you don't know to start off. use our apps, you can split your team.",
+        img: {
+            src: bagiTimnya,
+            alt: "project-3"
+        },
+        type: "Front end App",
+        url: "https://cartsubmission-rajiph.vercel.app/",
+        iconList: [
+            {
+                icon: TbBrandNextjs,
+                name: "Nextjs"
+            }, {
+                icon: SiTailwindcss,
+                name: "Tailwindcss"
             }
         ]
     }
