@@ -112,8 +112,9 @@ const Navigation = () => {
                     </div>
                 )
             }
-            <motion.div className={"bg-amber-500 h-[3px] absolute bottom-0 left-0"}
-                        style={{width: scrollY}}
+            <motion.div
+                className={"bg-amber-500 h-[3px] absolute bottom-0 left-0"}
+                style={{width: scrollY}}
             />
         </div>
     );
