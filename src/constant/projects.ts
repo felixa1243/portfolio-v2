@@ -4,7 +4,6 @@ import {SiPostgresql, SiRedux, SiSpringboot, SiTailwindcss} from "react-icons/si
 import wrench from "../assets/img/wrench.webp";
 import {TbBrandNextjs, TbBrandReactNative} from "react-icons/tb";
 import bagiTimnya from '../assets/img/bagi-timnya.png';
-import spm from '../assets/img/thumbs-spm.png'
 
 export const projects = [
     {
