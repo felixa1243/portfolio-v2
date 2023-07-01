@@ -73,7 +73,7 @@ export const projects = [
             alt: "bagi timnya"
         },
         type: "Front end App",
-        url: "https://bagitimnya.vercel.app",
+        url: "https://bagi-timnya.vercel.app",
         iconList: [
             {
                 icon: TbBrandNextjs,
@@ -84,45 +84,45 @@ export const projects = [
             }
         ]
     },
-    {
-        title: "Spm web app",
-        description: "Catalog app for SPM rental. Spm rental is a motorcycle renting service from indonesia. this app include a catalog for product and a blog.",
-        img: {
-            src: spm,
-            alt: "spm-web"
-        },
-        type: "Front end App",
-        url: "https://sewamotorspm.vercel.app/",
-        iconList: [
-            {
-                icon: FaReact,
-                name: "Reactjs"
-            }, {
-                icon: SiTailwindcss,
-                name: "Tailwindcss"
-            }
-        ]
-    },
-    {
-        title: "Damovie",
-        description: "Simple app to manage movie collections. Built with React Native and Spring boot. You can do crud activity and find movie by title.",
-        img: {
-            src: bagiTimnya,
-            alt: "Damovie"
-        },
-        type: "Fullstack App",
-        url: "https://sewamotorspm.vercel.app/",
-        iconList: [
-            {
-                icon: TbBrandReactNative,
-                name: "ReactNative"
-            }, {
-                icon: SiSpringboot,
-                name: "Spring boot"
-            }, {
-                icon: SiPostgresql,
-                name: "Postgresql"
-            }
-        ]
-    }
+    // {
+    //     title: "Spm web app",
+    //     description: "Catalog app for SPM rental. Spm rental is a motorcycle renting service from indonesia. this app include a catalog for product and a blog.",
+    //     img: {
+    //         src: spm,
+    //         alt: "spm-web"
+    //     },
+    //     type: "Front end App",
+    //     url: "https://sewamotorspm.vercel.app/",
+    //     iconList: [
+    //         {
+    //             icon: FaReact,
+    //             name: "Reactjs"
+    //         }, {
+    //             icon: SiTailwindcss,
+    //             name: "Tailwindcss"
+    //         }
+    //     ]
+    // },
+    // {
+    //     title: "Damovie",
+    //     description: "Simple app to manage movie collections. Built with React Native and Spring boot. You can do crud activity and find movie by title.",
+    //     img: {
+    //         src: bagiTimnya,
+    //         alt: "Damovie"
+    //     },
+    //     type: "Fullstack App",
+    //     url: "https://sewamotorspm.vercel.app/",
+    //     iconList: [
+    //         {
+    //             icon: TbBrandReactNative,
+    //             name: "ReactNative"
+    //         }, {
+    //             icon: SiSpringboot,
+    //             name: "Spring boot"
+    //         }, {
+    //             icon: SiPostgresql,
+    //             name: "Postgresql"
+    //         }
+    //     ]
+    // }
 ]
